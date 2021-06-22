@@ -1,1 +1,1 @@
-![Alt text](/assets/mp-mock-connectfour.png?raw=true "Connect Four)
+![Alt text](/assets/mp-mock-connectfour.png?raw=true "Connect Four")
