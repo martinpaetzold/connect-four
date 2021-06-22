@@ -1,5 +1,5 @@
 ![Alt text](/assets/mp-mock-connectfour.png?raw=true "Connect Four")
 
 # Connect four
-### Want to play 1 round?:
+### :joystick: Want to play one round? You just need a second player.
 https://mpaetzold.dev/connectfour/
