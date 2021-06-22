@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightslategray;
+    /* retro game retro bit font :) */
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 23px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* standard button looks boring... */
+button {
+    border: 2px solid #000;
+    color: #000;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#modals {
+    display: none;
+}
+
+#help {
+    display: none;
+}
+
+#help p {
+    margin-top: 15px;
+}
+
+#modalWinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    min-height: 300px;
+    z-index: 20;
+    /* background: lightsteelblue; */
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+#modalWinner button {
+    margin-top: 23px;
+}
+
+/* animate the area around the modal */
+@keyframes colorChangeBackground {
+    0% {
+        background: fuchsia;
+    }
+    33% {
+        background: green;
+    }
+    66% {
+        background: blue;
+    }
+    100% {
+        background: fuchsia;
+    }
+}
+
+/* hier weitermachen */
+@keyframes colorChangeFont {
+    0% {
+        color: green;
+    }
+    33% {
+        color: red;
+    }
+    66% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
+#modals::before {
+    /* background: rgba(0, 0, 0, 0.7); */
+    animation: colorChangeBackground 5s linear 0s infinite;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: block;
+    position: absolute;
+}
+
+/* animate headline */
+.animateAWESOME {
+    animation: colorChangeFont 2s linear 0s infinite;
+}
+
+#gameboard {
+    position: absolute;
+    width: 700px;
+    border: solid navy 10px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 23px;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.slot .hole {
+    width: 80px;
+    height: 80px;
+    transform: translate(-30px, -30px);
+    border: solid darkblue 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.player1 {
+    background: darkred;
+}
+
+.player2 {
+    background: darkorange;
+}
+
+.column:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#controlTheGame {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#whoIsTheCurrentPlayer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

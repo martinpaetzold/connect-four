@@ -1,0 +1,52 @@
+TODOs CONNECT FOUR
+
+1. ✅ Implement CHECK horizontally
+2. Implement CHECK diagonal up || down
+    2.1 ✅ Check by using the ARRAY Method
+    2.2 Bonus: Check by using another fancy method
+3. Restart
+    3.1 ✅ Reload after Winner
+        3.1.1 ✅ JS Alert "U WIN"
+        3.1.2 ✅ reload()
+    3.2 ✅ Button HTML / CSS
+    3.3 ✅ Function JS (simple page reload function) ||
+    3.4 Bonus: Function JS reset all classes?
+    3.5 ✅ Restart Button Winner Modal
+4. Show Active/Current player
+    4.1 ✅ HTML
+    4.2 ✅ JS: Active player
+5. Winner Modal
+    5.1 ✅ Modal HTML / CSS
+    5.2 ✅ JS show/hide Modal
+    5.3 ✅ Style the modal
+    5.4 ✅ Made an awesome animation
+    5.5 ✅ Show who is the winner to the user(s)
+    5.6 ✅ Update modal: Change order of the text
+    5.7 ✅ Add sound to the winner modal
+6. Help
+    5.1 ✅ Button HTML / CSS
+    5.2 ✅ Modal HTML / CSS
+    5.3 ✅ JS show/hide Modal
+    5.4 ✅ Content for help modal
+
+-----------------------------------------------------------------------------------------------
+
+7. Check basic rules
+    7.1 ✅ The board has six rows and seven columns
+    7.2 ✅ Two players take turns selecting a column to drop their checker into
+    7.3 ✅ When a player wins, a message appears to announce the victory
+    7.4 ✅ After a player wins, it should be possible to reset the game and play again
+    7.5 ✅ The gameplay should involve at least one animation
+
+-----------------------------------------------------------------------------------------------
+
+8. Bonus features
+    8.1 ❌ After a player wins, visually indicate which four pieces on the board satisfied
+        the victory condition
+    8.2 ❌ Allow players to drag their pieces across the screen and drop them into their
+        desired column using their mouse (or finger on touch screens)
+    8.3 💣 Allow players to play using only their keyboard
+    8.4 ❌ Allow players at the beginning of the game to increase the number of columns
+        on the board and the number of connected pieces that are required to win
+    8.5 🐙 Allow a single player to play against the computer
+

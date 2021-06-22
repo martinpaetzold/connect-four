@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Connect Four. Awesome!</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <h1>Let's play Connect Four.</h1>
+        <div id="controlTheGame">
+            <button type="submit" id="restartTheGame">RESTART</button>
+            <button type="submit" id="helpForGame">HELP</button>
+            <h3>Current player: <span id="whoIsTheCurentPlayer"></span></h3>
+        </div>
+        <div id="gameboard">
+            <div class="column column0">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+
+            <div class="column column1">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+
+            <div class="column column2">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+
+            <div class="column column3">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+
+            <div class="column column4">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+
+            <div class="column column5">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+
+            <div class="column column6">
+                <div class="slot row0">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row1">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row2">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row3">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row4">
+                    <div class="hole"></div>
+                </div>
+                <div class="slot row5">
+                    <div class="hole"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modals">
+            <div id="modalWinner">
+                <h1 class="animateAWESOME">AWESOME!</h1>
+                <!-- winner.gif ©️ Tamzid Hasan dribbble.com/th_studio -->
+                <img src="./assets/winner.gif" width="200px" height="150px" />
+                <!-- show player 1 || 2 -->
+                <h2>
+                    <span
+                        id="modalWinnerPlayerName"
+                        class="animateAWESOME"
+                    ></span>
+                </h2>
+                <p>
+                    you're the winner of this round. To start another one,
+                    please press the button below or to cancel just close the
+                    tab.
+                </p>
+                <button type="submit" id="btnModalWinnerRestart">
+                    RESTART
+                </button>
+            </div>
+        </div>
+
+        <div id="help">
+            <div id="modalWinner">
+                <h1 class="animateAWESOME">HOW CONNECT FOUR WORKS?</h1>
+                <p>
+                    &Uuml;berall dieselbe alte Leier. Das Layout ist fertig, der
+                    Text l&auml;sst auf sich warten. Damit das Layout nun nicht
+                    nackt im Raume steht und sich klein und leer vorkommt,
+                    springe ich ein: der Blindtext. Genau zu diesem Zwecke
+                    erschaffen, immer im Schatten meines gro&szlig;en Bruders
+                    &raquo;Lorem Ipsum&laquo;, freue ich mich jedes Mal, wenn
+                    Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist
+                    wahrgenommen werden. Und weil Sie nun schon die G&uuml;te
+                    haben, mich ein paar weitere S&auml;tze lang zu begleiten,
+                    m&ouml;chte ich diese Gelegenheit nutzen, Ihnen nicht nur
+                    als L&uuml;ckenf&uuml;ller zu dienen, sondern auf etwas
+                    hinzuweisen, das es ebenso verdient wahrgenommen zu werden:
+                    Webstandards n&auml;mlich.
+                </p>
+                <button type="submit" id="btnModalHelpClose">CLOSE</button>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
